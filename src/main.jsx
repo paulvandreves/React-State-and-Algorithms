@@ -1,11 +1,11 @@
-import React, { StrictMode, Component, useState } from 'react'
+import React, { StrictMode, Component } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './tailwind.css'
-import { useCounter } from './hooks/useCounter'
-import { useToggle } from './hooks/useToggle'
-import { usePrevious } from './hooks/usePrevious'
-import { useDebounce } from './hooks/useDebounce'
+import CounterDemo from './components/CounterDemo.jsx'
+import ToggleDemo from './components/ToggleDemo.jsx'
+import PreviousDemo from './components/PreviousDemo.jsx'
+import DebounceDemo from './components/DebounceDemo.jsx'
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -28,61 +28,6 @@ class ErrorBoundary extends Component {
     }
     return this.props.children
   }
-}
-
-function CounterDemo() {
-  const { count, increment, decrement, incrementBy, reset } = useCounter(0)
-  return (
-    <div className="card">
-      <h2 className="text-xl font-semibold mb-2">useCounter</h2>
-      <div className="text-lg">Count: <span className="font-mono font-bold">{count}</span></div>
-      <div className="flex gap-2 mt-3">
-        <button className="btn" onClick={decrement}>-1</button>
-        <button className="btn" onClick={increment}>+1</button>
-        <button className="btn" onClick={() => incrementBy(5)}>+5</button>
-        <button className="btn-secondary" onClick={reset}>Reset</button>
-      </div>
-    </div>
-  )
-}
-
-function ToggleDemo() {
-  const { value, toggle, set } = useToggle(false)
-  return (
-    <div className="card">
-      <h2 className="text-xl font-semibold mb-2">useToggle</h2>
-      <div className="text-lg">Value: <span className="font-mono font-bold">{String(value)}</span></div>
-      <div className="flex gap-2 mt-3">
-        <button className="btn" onClick={toggle}>Toggle</button>
-        <button className="btn" onClick={() => set(true)}>Set true</button>
-        <button className="btn" onClick={() => set(false)}>Set false</button>
-      </div>
-    </div>
-  )
-}
-
-function PreviousDemo() {
-  const [val, setVal] = useState('')
-  const prev = usePrevious(val)
-  return (
-    <div className="card">
-      <h2 className="text-xl font-semibold mb-2">usePrevious</h2>
-      <input className="input" value={val} onChange={(e) => setVal(e.target.value)} placeholder="Type to change value" />
-      <div className="mt-2 text-sm text-gray-600">Current: {val || '(empty)'} | Previous: {prev === undefined ? '(undefined)' : prev}</div>
-    </div>
-  )
-}
-
-function DebounceDemo() {
-  const [text, setText] = useState('')
-  const debounced = useDebounce(text, 500)
-  return (
-    <div className="card">
-      <h2 className="text-xl font-semibold mb-2">useDebounce (500ms)</h2>
-      <input className="input" value={text} onChange={(e) => setText(e.target.value)} placeholder="Type quickly..." />
-      <div className="mt-2 text-sm text-gray-600">Immediate: {text || '(empty)'} | Debounced: {debounced || '(empty)'}</div>
-    </div>
-  )
 }
 
 function HookPlayground() {
