@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*npm-cache
+npm-cache/_update-notifier-last-checked
+npm-cache/_cacache/content-v2/sha512/00/7f/474dab77775e19a0bceb7400e42aa570ce268115ea2221ae6f0483cc4ac6fdf3d4333f1ec6457a545e7167ce3ac96deb884e84fd77ac393e14cbdc52cc30
+npm-cache/_cacache/content-v2/sha512/01/44/66e5fd236043b27418fb550955bc3ae378582d8437441791f574ffba98da685ce328d6ab90a89e30bc90f2459f7ea4ede4196a0e766574f1c4afd9a255e9
+npm-cache/_cacache/content-v2/sha512/02/e3/f32eb2bd837c8e528bc254e0cf988c6af948698000943e8322f4bdcb31e7b977f3ac909e066fcc4e6aea9aea60c49dfa74143928a2e9558f5a0263e24de1
+npm-cache/_cacache/content-v2/sha512/04/da/0263a4975cf43b805da8a483f818113e5f0ed4fa91cc60abb38e008ddc6c22688474f5451e29f85ec88af2efb42dac20650b428ad2ae7f4c447fb588773d
+npm-cache/_cacache/content-v2/sha512/08/e4/4ea676a86a9d44d85d34d12eb6afa03ad2e1d99e696fa2685fc93d8395372b6353ab04a9f65211fbaa7e704c2f7332f0f4018edcb1d3d237028ffbb5a243
+npm-cache/_cacache/content-v2/sha512/05/2f/0f7e6b431a7ae061d3a89c665074b66c95621e08614ff6da5a9f4862d42a3666bd8d2800ecbc6600f17c6e1bfe145a027a0a3b6ff9826707a30cebd40695
+npm-cache/_cacache/content-v2/sha512/05/a5/e03ae231cfc9fca48ab77bb02d83feecf83a6262bc67e2f768b77c3d29b9c185c450abaa37c5e9907487f29ea49e5de0eb177db1f96bdfce63a33e263d96
+npm-cache/_cacache/content-v2/sha512/06/5f/9491bc8d79888740c263d865da23f7a10c54ee59165eaa119cbd4e7768f5795fd21049e0142c2c7b180c1f5c276aa77f2ea88c5acb69a8f62eecc2169bc0
+npm-cache/_cacache/content-v2/sha512/06/8a/7a4110fbe767c6fdafa5ae90c104b1e7532d2bedb42cfce9bb698c9fd1251c66e759b7aaa22e9402922e6a6f71e31b7f205fa0ae262cc3184412ed6cedbb
+npm-cache/_cacache/content-v2/sha512/06/d1/1e4aca1a4239523c17a631022b635318d2e33abe74b58397e6b9f60eb67c4b19464cdb5efc3ca6e1b24ec57efe7c217f99b5cbe81b071c62c8743e096400
+npm-cache/_cacache/content-v2/sha512/07/93/a77a655158de866b52369a76630681f6361e7dbcbcd5e7a340c9d310bcaae6736aa7026b4d82aa29245d0cbce7cccc0d2ada09c4bbac47b2f238c726ff50
